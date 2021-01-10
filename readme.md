@@ -7,15 +7,25 @@ Aplikasi ini adalah aplikasi yang gratis untuk digunakan, namun jika anda ingin 
 # Fitur
 
   Reset Data (Fitur ini diperlukan pada saat Sekolah ingin membersihkan data pada database dan ingin melakukan Pemilihan pada tahnu berikutnya
+  
   Kunci Akun (Fitur ini menonaktifkan akun DPT pada saat dia selesai melakukan pemilihan jadi dia tidak akan punya kesempatan untuk memilih lebih dari 1 kali
+  
   Reset User (Fitur ini digunakan apabila ada DPT yang mengajukan komplain bahwa dia belum pernah melakukan Pemilihan namun akunnya telah terkunci
+  
   Data Sekolah (Dengan fitur ini anda bisa memperbarui data sekolah anda
+  
   Data Kelas DPT (Dengan fitur ini anda bisa menambahkan kelas atau menghapus kelas yang sudah ada)
+  
   Data Kandidat (Dengan fitur ini anda bisa Menambahkan atau menghapus Kandidat Ketua OSIS)
+  
   Data DPT (Dengan fitur ini anda bisa Menambahkan atau menghapus Daftar Pemilih Tetap)
+  
   Hasil Pemilihan (Dengan fitur ini anda dapat melihat hasil pemilihan Ketua OSIS)
+  
   Daftar Hadir (Dengan Fitur ini anda dapat Mengunduh Daftar Hadir Pemilihan Ketua OSIS)
+  
   Laporan Pilketos (Dengan Fitur ini anda dapat Mengunduh Laporan Pemilihan Ketua OSIS)
+  
   Data Massal (Dengan Fitur Ini Anda Dapat Menambahkan Data Secara Massal)
 
 
