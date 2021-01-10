@@ -1,70 +1,65 @@
-###################
-What is CodeIgniter
-###################
+# E-Voting
+E-Voting adalah aplikasi E-Voting untuk Pemilihan Di Sekolah. Aplikasi ini dikembangkan untuk membantu Sekolah-Sekolah dalam melakukan Pemilihan dengan Mudah dan Cepat. 
+Aplikasi ini adalah aplikasi yang gratis untuk digunakan, namun jika anda ingin memberikan Kontribusi atau membantu Kami untuk pengembangan Aplikasi ini lebih lanjut anda dapat Menghubungi Pembuat.
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
 
-*******************
-Release Information
-*******************
+# Fitur
+<ol>
+  <li><b>Reset Data</b> (Fitur ini diperlukan pada saat Sekolah ingin membersihkan data pada database dan ingin melakukan Pemilihan pada tahnu berikutnya</li>
+  <li><b>Kunci Akun</b> (Fitur ini menonaktifkan akun DPT pada saat dia selesai melakukan pemilihan jadi dia tidak akan punya kesempatan untuk memilih lebih dari 1 kali</li>
+  <li><b>Reset User</b> (Fitur ini digunakan apabila ada DPT yang mengajukan komplain bahwa dia belum pernah melakukan Pemilihan namun akunnya telah terkunci</li>
+  <li><b>Data Sekolah</b> (Dengan fitur ini anda bisa memperbarui data sekolah anda</li>
+  <li><b>Data Kelas DPT</b> (Dengan fitur ini anda bisa menambahkan kelas atau menghapus kelas yang sudah ada)</li>
+  <li><b>Data Kandidat</b> (Dengan fitur ini anda bisa Menambahkan atau menghapus Kandidat Ketua OSIS)</li>
+  <li><b>Data DPT</b> (Dengan fitur ini anda bisa Menambahkan atau menghapus Daftar Pemilih Tetap)</li>
+  <li><b>Hasil Pemilihan</b> (Dengan fitur ini anda dapat melihat hasil pemilihan Ketua OSIS)</li>
+  <li><b>Daftar Hadir</b> (Dengan Fitur ini anda dapat Mengunduh Daftar Hadir Pemilihan Ketua OSIS)</li>
+  <li><b>Laporan Pilketos</b> (Dengan Fitur ini anda dapat Mengunduh Laporan Pemilihan Ketua OSIS)</li>
+  <li><b>Data Massal</b> (Dengan Fitur Ini Anda Dapat Menambahkan Data Secara Massal)</li>
+</ol>
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
 
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+# User Guide
+<h2>Local Instalation</h2>
+<ol>
+	<li>Download XAMPP <a href="https://www.apachefriends.org/download.html" target="_blank">Disini</a> dan install</li>
+	<li>Jalankan XAMPP Control Panel dan Klik Start(Mulai) pada <b>Apache</b> dan <b>Mysql</b></li>
+	<li>Copy File <b>pilketos-master.zip</b> ke Folder <b>C://xampp/htdocs/</b> Kemudian Extract</li>
+</ol>
+<br/>
+<h2>Creating Database</h2>
+<ol>
+	<li>Masuk ke Browser kemudian tulis di Address Bar http://localhost/phpmyadmin</li>
+	<li>Buat Database dengan Nama <b>db_pilketos</b></li>
+	<li>Import Database <b>db_pilketos.sql</b> <a href="https://www.domainesia.com/panduan/cara-import-database-mysql-di-phpmyadmin/" target="_blank">Tutorial Disini</a></li>
+</ol>
+<br/>
+<h2>E-Voting Konfiguration</h2>
+<b>Konfigurasi Database</b>
+<ul>
+	<li>Edit File <b>database.php</b> yang ada pada Folder <b>application/config/</b></li>
+	<li>Kemudian Pastikan <b>Hostname</b>nya Bernilai <b>localhost</b></li>
+	<li><b>Username</b> bernilai <b>root</b></li>
+	<li><b>Password</b> dibiarkan <b>kosong</b></li>
+	<li>dan <b>Database</b> bernilai <b>db_pilketos</b> <b>Note: <i>Sesuaikan dengan nama database yang Dibuat Tadi</i></b></li>
+	<li>Simpan File</li>
+		
+</ul>
+<b>Konfigurasi Base URL</b>
+<ul>
+	<li>Edit File <b>config.php</b> yang ada pada Folder <b>application/config/</b></li>
+	<li>Kemudian pastikan <b>variable $config['base_url']</b> bernilai <b>'http://localhost/E-voting/</b></li>
+	<li>Simpan File</li>
+</ul>
+<br/>
+<h2>Akses Aplikasi</h2>
+<b>Akses Admin</b>
+<ul> 
+	<li>Masuk ke Browser kemudian tulis di address bar <b>http://localhost/E-voting/index.php/admin/</b></li>
+	<li>Login dengan menggunakan <b>Username = admin</b> dan <b>Password = admin</b></li> 
+</ul>
+<b>Akses User (DPT)</b>
+<ul> 
+	<li>Masuk Ke Browser kemudian tulis di address bar <b>http://localhost/E-voting</b></li>
+	<li>Login dengan menggunakan <b>Username dan Password = NISN</b> DPT yang bersangkutan, yang telah di INPUT oleh Admin sebelumnya</li>
+</ul>
