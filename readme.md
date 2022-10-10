@@ -3,7 +3,7 @@
 E-Voting adalah aplikasi E-Voting untuk Pemilihan Di Sekolah. Aplikasi ini dikembangkan untuk membantu Sekolah-Sekolah dalam melakukan Pemilihan dengan Mudah dan Cepat. 
 Aplikasi ini adalah aplikasi yang gratis untuk digunakan, namun jika anda ingin memberikan Kontribusi atau membantu Kami untuk pengembangan Aplikasi ini lebih lanjut anda dapat Menghubungi Pembuat.
 
-
+Berlicense
 # Fitur
 
   Reset Data (Fitur ini diperlukan pada saat Sekolah ingin membersihkan data pada database dan ingin melakukan Pemilihan pada tahnu berikutnya
